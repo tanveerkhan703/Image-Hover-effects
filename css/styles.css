@@ -1,0 +1,39 @@
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+.main-container{
+  width: 300px;
+  height: 300px;
+  background-image: url(../assets/img/ss1.png);
+  border-left: 2px solid white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.main-container .img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.main-container .img h5{
+  font-size: 20px;
+  color: black;
+  font-family: sans-serif;
+}
+.main-container:hover .img{
+  display: flex;
+ /* border: 2px solid white;*/
+  background-color: white;
+  opacity: .6;
+  transform: scale(.94);
+  border-top-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+}
